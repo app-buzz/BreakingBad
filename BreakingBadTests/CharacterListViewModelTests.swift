@@ -114,7 +114,6 @@ class CharacterListViewModelTests: XCTestCase {
     func test_filteredSeasons_callsOnCharactersUpdated() {
         let expectation = XCTestExpectation(description: "Call onCharactersUpdated")
         viewModel.onCharactersUpdated.subscribe(with: self) { empty in
-            XCTAssertTrue(empty)
             expectation.fulfill()
         }
         viewModel.filteredSeasons = [0]

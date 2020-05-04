@@ -8,7 +8,7 @@
 
 import Foundation
 
-enum DetailField {
+enum DetailField: Equatable {
     case text(String,String)
     case image(URL)
 }
