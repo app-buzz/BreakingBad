@@ -26,7 +26,6 @@
 		30B3F7C52460320B0027FDC7 /* FilterViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30B3F7C42460320B0027FDC7 /* FilterViewModelTests.swift */; };
 		30B3F7C7246032190027FDC7 /* FiltersViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30B3F7C6246032190027FDC7 /* FiltersViewModelTests.swift */; };
 		30B3F7C9246032300027FDC7 /* CharacterListViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30B3F7C8246032300027FDC7 /* CharacterListViewModelTests.swift */; };
-		30B3F7CB246032490027FDC7 /* CharacterViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30B3F7CA246032490027FDC7 /* CharacterViewModelTests.swift */; };
 		30F7E905245FE79E0015F4DE /* Heart Breaking Bad.otf in Resources */ = {isa = PBXBuildFile; fileRef = 30F7E904245FE79E0015F4DE /* Heart Breaking Bad.otf */; };
 		30F7E90D245FFFC40015F4DE /* FiltersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30F7E90C245FFFC40015F4DE /* FiltersViewController.swift */; };
 		30F7E90F245FFFCE0015F4DE /* FiltersViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30F7E90E245FFFCE0015F4DE /* FiltersViewModel.swift */; };
@@ -79,7 +78,6 @@
 		30B3F7C42460320B0027FDC7 /* FilterViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterViewModelTests.swift; sourceTree = "<group>"; };
 		30B3F7C6246032190027FDC7 /* FiltersViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FiltersViewModelTests.swift; sourceTree = "<group>"; };
 		30B3F7C8246032300027FDC7 /* CharacterListViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterListViewModelTests.swift; sourceTree = "<group>"; };
-		30B3F7CA246032490027FDC7 /* CharacterViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterViewModelTests.swift; sourceTree = "<group>"; };
 		30F7E904245FE79E0015F4DE /* Heart Breaking Bad.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Heart Breaking Bad.otf"; sourceTree = "<group>"; };
 		30F7E90C245FFFC40015F4DE /* FiltersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FiltersViewController.swift; sourceTree = "<group>"; };
 		30F7E90E245FFFCE0015F4DE /* FiltersViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FiltersViewModel.swift; sourceTree = "<group>"; };
@@ -173,7 +171,6 @@
 				30B3F7C42460320B0027FDC7 /* FilterViewModelTests.swift */,
 				30B3F7C6246032190027FDC7 /* FiltersViewModelTests.swift */,
 				30B3F7C8246032300027FDC7 /* CharacterListViewModelTests.swift */,
-				30B3F7CA246032490027FDC7 /* CharacterViewModelTests.swift */,
 				3066CFC8245F9D3200C56FD2 /* Info.plist */,
 			);
 			path = BreakingBadTests;
@@ -472,7 +469,6 @@
 			files = (
 				30B3F7C9246032300027FDC7 /* CharacterListViewModelTests.swift in Sources */,
 				30B3F7C52460320B0027FDC7 /* FilterViewModelTests.swift in Sources */,
-				30B3F7CB246032490027FDC7 /* CharacterViewModelTests.swift in Sources */,
 				30B3F7C7246032190027FDC7 /* FiltersViewModelTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
