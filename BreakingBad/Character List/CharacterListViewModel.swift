@@ -9,7 +9,7 @@
 import Foundation
 import Signals
 
-enum LoadingProgress {
+enum LoadingProgress: Equatable {
     case started
     case finished
     case failed(message:String)

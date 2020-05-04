@@ -8,7 +8,7 @@
 
 import Foundation
 
-struct BreakingBadCharacter: Decodable {
+struct BreakingBadCharacter: Decodable, Equatable {
     
     var id: Int
     var name: String
