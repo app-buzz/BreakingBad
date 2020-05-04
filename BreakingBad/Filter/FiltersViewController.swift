@@ -40,7 +40,7 @@ class FiltersViewController: UIViewController, Storyboarded {
 extension FiltersViewController: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return FiltersViewModel.numSeasons
+        return viewModel.numFilters
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {

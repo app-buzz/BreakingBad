@@ -36,6 +36,10 @@ class FiltersViewModel {
         onTapApply.fire(selectedSeasons)
     }
     
+    var numFilters: Int {
+        return filters.count
+    }
+    
     func filter(at index:Int) -> FilterViewModel? {
         guard index > -1 && index < FiltersViewModel.numSeasons else { return nil }
         return filters[index]
