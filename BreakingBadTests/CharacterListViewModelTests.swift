@@ -123,8 +123,8 @@ class CharacterListViewModelTests: XCTestCase {
     
     func test_searchText_callsOnCharactersUpdated() {
         let expectation = XCTestExpectation(description: "Call onCharactersUpdated")
+        expectation.expectedFulfillmentCount = 2
         viewModel.onCharactersUpdated.subscribe(with: self) { empty in
-            XCTAssertTrue(empty)
             expectation.fulfill()
         }
         viewModel.searchText = ""
@@ -145,6 +145,28 @@ class CharacterListViewModelTests: XCTestCase {
                 break;
             }
         }
+        wait(for: [expectation], timeout: 5)
+    }
+    
+    func test_searchText_findsJesse() {
+        let expectation = XCTestExpectation(description: "Call onCharactersUpdated")
+        viewModel.onCharactersUpdated.subscribe(with: self) { empty in
+            if let character = self.viewModel.character(at: 0), self.viewModel.numCharacters == 1, character.name == "Jesse Pinkman" {
+                expectation.fulfill()
+            }
+        }
+        viewModel.searchText = "Jesse"
+        wait(for: [expectation], timeout: 5)
+    }
+    
+    func test_filteredSeasons_findsWalter() {
+        let expectation = XCTestExpectation(description: "Call onCharactersUpdated")
+        viewModel.onCharactersUpdated.subscribe(with: self) { empty in
+            if let character = self.viewModel.character(at: 0), self.viewModel.numCharacters == 1, character.name == "Walter White" {
+                expectation.fulfill()
+            }
+        }
+        viewModel.filteredSeasons = [4]
         wait(for: [expectation], timeout: 5)
     }
 
